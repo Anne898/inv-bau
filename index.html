@@ -9,7 +9,7 @@
 
   <meta property="og:title" content="Invitación">
   <meta property="og:description" content="¡Vamos a celebrar!">
-  <meta property="og:image" itemprop="image" content="https://invitacion-marian.netlify.app/files/miniatura.png">
+  <meta property="og:image" itemprop="image" content="https://jose-luis-invitacion.netlify.app/files/miniatura.png">
 
   <title>Invitación</title>
   <link rel="stylesheet" href="nicepage.css" media="screen">
@@ -88,7 +88,7 @@
       width: 200px;
       height: 35px;
       border-radius: 25px;
-      background-color: #ffb0d6;
+      background-color: #3b638a;
       font-size: 12px;
       color: #ffffff;
       text-decoration: none;
@@ -127,21 +127,26 @@
 
   <div id="button-container">
 
-
+<!-- 
 
     <a id="boton-direccion" href="https://maps.apple.com/place?address=Calle%20F.%20G.%20Quintana%20111,%20Matachi,%2031990%20Matach%C3%AD,%20Chih.,%20M%C3%A9xico&coordinate=28.842925,-107.756180&name=Parroquia%20San%20Rafael%20Arc%C3%A1ngel&place-id=I6F6DE1E0F5D55589&map=h" class="button">
       <i class="fas fa-map-marker-alt"></i> <b>MISA<b>
     </a>
 
-    <a id="boton-detalles" href="https://maps.apple.com/place?address=Calle%20F.%20G.%20Quintana%20111,%20Matachi,%2031990%20Matach%C3%AD,%20Chih.,%20M%C3%A9xico&coordinate=28.842925,-107.756180&name=Parroquia%20San%20Rafael%20Arc%C3%A1ngel&place-id=I6F6DE1E0F5D55589&map=h" class="button">
-      <i class="fas fa-map-marker-alt"></i> <b>RECEPCIÓN<b>
-    </a>
-
-    <a id="boton-asistencia"
+      <a id="boton-asistencia"
       href="https://api.whatsapp.com/send?phone=+526142751586&text=%C2%A1Hola%21+Muchas+gracias+por+la+invitaci%C3%B3n%2C+ah%C3%AD+estaremos%21%21+%F0%9F%A5%B3"
       class="button">
       <i class="fab fa-whatsapp"></i> <b>CONFIRMAR ASISTENCIA<b>
     </a>
+    
+    
+    -->
+
+    <a id="boton-detalles" href="https://maps.app.goo.gl/R6W2buFyk7P4zhFQ7" class="button">
+      <i class="fas fa-map-marker-alt"></i> <b>RECEPCIÓN<b>
+    </a>
+
+  
 
 
   </div>
@@ -175,7 +180,7 @@
       video.addEventListener('timeupdate', function () {
         var currentTime = video.currentTime;
 
-        if (currentTime >= 32.16) {
+        if (currentTime >= 13.8 && currentTime <= 20) {
           botonDireccion.style.opacity = '1';
           botonDireccion.style.pointerEvents = 'auto';
           botonAsistencia.style.opacity = '1';
