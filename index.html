@@ -146,8 +146,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       var video = document.querySelector('video');
       var poster = document.getElementById('poster');
-      var botonDireccion = document.getElementById('boton-direccion');
-      var botonAsistencia = document.getElementById('boton-asistencia');
+  
       var botonDetalles = document.getElementById('boton-detalles'); // Nuevo botón
 
       poster.addEventListener('click', function () {
@@ -170,17 +169,11 @@
         var currentTime = video.currentTime;
 
         if (currentTime >= 13.8 && currentTime <= 20) {
-          botonDireccion.style.opacity = '1';
-          botonDireccion.style.pointerEvents = 'auto';
-          botonAsistencia.style.opacity = '1';
-          botonAsistencia.style.pointerEvents = 'auto';
+   
           botonDetalles.style.opacity = '1'; // Mostrar nuevo botón
           botonDetalles.style.pointerEvents = 'auto'; // Habilitar interacción
         } else {
-          botonDireccion.style.opacity = '0';
-          botonDireccion.style.pointerEvents = 'none';
-          botonAsistencia.style.opacity = '0';
-          botonAsistencia.style.pointerEvents = 'none';
+         
           botonDetalles.style.opacity = '0'; // Ocultar nuevo botón
           botonDetalles.style.pointerEvents = 'none'; // Deshabilitar interacción
         }
